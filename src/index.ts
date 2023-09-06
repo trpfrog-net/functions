@@ -3,6 +3,12 @@ import { requestUpdate } from './trpfrog-diffusion/index.js'
 import { z } from 'zod'
 
 functions.http('trpfrog-diffusion-update-request', (req, res) => {
+  const token = z.string().safeParse(req.header('X-Authorization'))
+  if (!token.success || token.data !== process.env.TRPFROG_FUNCTIONS_SECRET) {
+    res.status(401).send('Unauthorized')
+    return
+  }
+
   if (req.method === 'GET') {
     const unverifiedCallbackUrl = req.header('X-Callback-Url')
     if (unverifiedCallbackUrl == null) {
