@@ -18,5 +18,8 @@
   "homepage": "https://github.com/TrpFrog/trpfrog-net-functions#readme",
   "dependencies": {
     "@google-cloud/functions-framework": "^3.3.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2"
   }
 }
