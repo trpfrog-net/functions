@@ -1,5 +1,6 @@
 {
   "extends": "@tsconfig/node20/tsconfig.json",
+  "type": "module",
   "compilerOptions": {
     "outDir": "./dist",
     "rootDir": "./src"

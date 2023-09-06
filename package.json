@@ -20,12 +20,17 @@
     "url": "https://github.com/TrpFrog/trpfrog-net-functions/issues"
   },
   "homepage": "https://github.com/TrpFrog/trpfrog-net-functions#readme",
+  "type": "module",
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown",
     "**/*.ts": "eslint --fix"
   },
   "dependencies": {
-    "@google-cloud/functions-framework": "^3.3.0"
+    "@google-cloud/functions-framework": "^3.3.0",
+    "@huggingface/inference": "^2.6.1",
+    "langchain": "^0.0.144",
+    "node-fetch": "^3.3.2",
+    "zod": "^3.22.2"
   },
   "devDependencies": {
     "@tsconfig/node20": "^20.1.2",
