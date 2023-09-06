@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint . --fix && prettier . --write --ignore-unknown",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "watch": "tsc -w",
+    "start": "functions-framework --target=trpfrogNetFunctions"
   },
   "repository": {
     "type": "git",
