@@ -1,0 +1,19 @@
+{
+  "name": "trpfrog-net-functions",
+  "version": "1.0.0",
+  "description": "Serverless functions for trpfrog.net",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TrpFrog/trpfrog-net-functions.git"
+  },
+  "author": "TrpFrog",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TrpFrog/trpfrog-net-functions/issues"
+  },
+  "homepage": "https://github.com/TrpFrog/trpfrog-net-functions#readme"
+}
