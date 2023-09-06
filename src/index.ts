@@ -3,7 +3,7 @@ import { requestUpdate } from './trpfrog-diffusion/index.js'
 import { z } from 'zod'
 
 functions.http('trpfrog-diffusion-update-request', (req, res) => {
-  const token = z.string().safeParse(req.header('X-Authorization'))
+  const token = z.string().safeParse(req.header('X-Api-Token'))
   if (!token.success || token.data !== process.env.TRPFROG_FUNCTIONS_SECRET) {
     res.status(401).send('Unauthorized')
     return
