@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/TrpFrog/trpfrog-net-functions/issues"
   },
-  "homepage": "https://github.com/TrpFrog/trpfrog-net-functions#readme"
+  "homepage": "https://github.com/TrpFrog/trpfrog-net-functions#readme",
+  "dependencies": {
+    "@google-cloud/functions-framework": "^3.3.0"
+  }
 }
